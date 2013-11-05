@@ -1,0 +1,11 @@
+clisp -i ~/.clisprc.lisp -on-error debug demo3.lisp
+clisp -i ~/.clisprc.lisp -on-error debug spx.lisp
+clisp -i ~/.clisprc.lisp -on-error debug grouped-layers.lisp
+clisp -i ~/.clisprc.lisp -on-error debug fe.lisp
+clisp -i ~/.clisprc.lisp -on-error debug fe2.lisp
+clisp -i ~/.clisprc.lisp -on-error debug special-slots-1.lisp
+clisp -i ~/.clisprc.lisp -on-error debug special-slots-2.lisp
+clisp -i ~/.clisprc.lisp -on-error debug special-slots-3.lisp
+clisp -i ~/.clisprc.lisp -on-error debug layer-gc.lisp
+clisp -i ~/.clisprc.lisp -on-error debug dynenv.lisp
+clisp -i ~/.clisprc.lisp -on-error debug partial-initargs.lisp

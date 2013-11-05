@@ -1,0 +1,11 @@
+ecl -load demo3.lisp
+ecl -load spx.lisp
+ecl -load grouped-layers.lisp
+ecl -load fe.lisp
+ecl -load fe2.lisp
+ecl -load special-slots-1.lisp
+ecl -load special-slots-2.lisp
+ecl -load special-slots-3.lisp
+ecl -load layer-gc.lisp
+ecl -load dynenv.lisp
+ecl -load partial-initargs.lisp

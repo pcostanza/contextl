@@ -1,0 +1,11 @@
+ccl -l demo3.lisp
+ccl -l spx.lisp
+ccl -l grouped-layers.lisp
+ccl -l fe.lisp
+ccl -l fe2.lisp
+ccl -l special-slots-1.lisp
+ccl -l special-slots-2.lisp
+ccl -l special-slots-3.lisp
+ccl -l layer-gc.lisp
+ccl -l dynenv.lisp
+ccl -l partial-initargs.lisp
