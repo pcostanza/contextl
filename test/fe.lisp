@@ -3,10 +3,3 @@
 (load "figure-editor")
 (in-package :contextl-user)
 (run-test)
-
-#+abcl (extensions:quit)
-#+allegro (excl:exit)
-#+clozure (ccl:quit)
-#+cmu (ext:quit)
-#+ecl (si:quit)
-#+sbcl (sb-ext:quit)

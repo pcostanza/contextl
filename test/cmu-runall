@@ -1,11 +1,11 @@
-lisp -load demo3.lisp
-lisp -load spx.lisp
-lisp -load grouped-layers.lisp
-lisp -load fe.lisp
-lisp -load fe2.lisp
-lisp -load special-slots-1.lisp
-lisp -load special-slots-2.lisp
-lisp -load special-slots-3.lisp
-lisp -load layer-gc.lisp
-lisp -load dynenv.lisp
-lisp -load partial-initargs.lisp
+lisp -load demo3.lisp -eval '(quit)'
+lisp -load spx.lisp -eval '(quit)'
+lisp -load grouped-layers.lisp -eval '(quit)'
+lisp -load fe.lisp -eval '(quit)'
+lisp -load fe2.lisp -eval '(quit)'
+lisp -load special-slots-1.lisp -eval '(quit)'
+lisp -load special-slots-2.lisp -eval '(quit)'
+lisp -load special-slots-3.lisp -eval '(quit)'
+lisp -load layer-gc.lisp -eval '(quit)'
+lisp -load dynenv.lisp -eval '(quit)'
+lisp -load partial-initargs.lisp -eval '(quit)'

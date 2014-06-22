@@ -20,5 +20,3 @@
 (pprint (generic-function-methods (layered-function-definer 'test-function)))
 
 (print :done)
-
-		       

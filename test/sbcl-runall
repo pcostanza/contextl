@@ -1,11 +1,11 @@
-sbcl --load demo3.lisp
-sbcl --load spx.lisp
-sbcl --load grouped-layers.lisp
-sbcl --load fe.lisp
-sbcl --load fe2.lisp
-sbcl --load special-slots-1.lisp
-sbcl --load special-slots-2.lisp
-sbcl --load special-slots-3.lisp
-sbcl --load layer-gc.lisp
-sbcl --load dynenv.lisp
-sbcl --load partial-initargs.lisp
+sbcl --load demo3.lisp --quit
+sbcl --load spx.lisp --quit
+sbcl --load grouped-layers.lisp --quit
+sbcl --load fe.lisp --quit
+sbcl --load fe2.lisp --quit
+sbcl --load special-slots-1.lisp --quit
+sbcl --load special-slots-2.lisp --quit
+sbcl --load special-slots-3.lisp --quit
+sbcl --load layer-gc.lisp --quit
+sbcl --load dynenv.lisp --quit
+sbcl --load partial-initargs.lisp --quit

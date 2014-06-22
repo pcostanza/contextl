@@ -1,11 +1,11 @@
-acl90 -s demo3.lisp
-acl90 -s spx.lisp
-acl90 -s grouped-layers.lisp
-acl90 -s fe.lisp
-acl90 -s fe2.lisp
-acl90 -s special-slots-1.lisp
-acl90 -s special-slots-2.lisp
-acl90 -s special-slots-3.lisp
-acl90 -s layer-gc.lisp
-acl90 -s dynenv.lisp
-acl90 -s partial-initargs.lisp
+acl90 --debug-startup -L ~/.clinit.cl -L demo3.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L spx.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L grouped-layers.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L fe.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L fe2.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L special-slots-1.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L special-slots-2.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L special-slots-3.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L layer-gc.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L dynenv.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L partial-initargs.lisp --kill

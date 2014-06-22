@@ -1,11 +1,11 @@
-abcl --load demo3.lisp
-abcl --load spx.lisp
-abcl --load grouped-layers.lisp
-abcl --load fe.lisp
-abcl --load fe2.lisp
-abcl --load special-slots-1.lisp
-abcl --load special-slots-2.lisp
-abcl --load special-slots-3.lisp
-abcl --load layer-gc.lisp
-abcl --load dynenv.lisp
-abcl --load partial-initargs.lisp
+abcl --load demo3.lisp --batch
+abcl --load spx.lisp --batch
+abcl --load grouped-layers.lisp --batch
+abcl --load fe.lisp --batch
+abcl --load fe2.lisp --batch
+abcl --load special-slots-1.lisp --batch
+abcl --load special-slots-2.lisp --batch
+abcl --load special-slots-3.lisp --batch
+abcl --load layer-gc.lisp --batch
+abcl --load dynenv.lisp --batch
+abcl --load partial-initargs.lisp --batch

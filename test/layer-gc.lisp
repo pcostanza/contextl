@@ -253,10 +253,3 @@
 
 #+cx-disable-layer-gc
 (print "Layer GC not supported.")
-
-#+abcl (extensions:quit)
-#+allegro (excl:exit)
-#+clozure (ccl:quit)
-#+cmu (ext:quit)
-#+ecl (si:quit)
-#+sbcl (sb-ext:quit)

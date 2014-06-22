@@ -1,36 +1,36 @@
-abcl --load demo3.lisp
-abcl --load spx.lisp
-abcl --load grouped-layers.lisp
-abcl --load fe.lisp
-abcl --load fe2.lisp
-abcl --load special-slots-1.lisp
-abcl --load special-slots-2.lisp
-abcl --load special-slots-3.lisp
-abcl --load layer-gc.lisp
-abcl --load dynenv.lisp
-abcl --load partial-initargs.lisp
-acl90 -s demo3.lisp
-acl90 -s spx.lisp
-acl90 -s grouped-layers.lisp
-acl90 -s fe.lisp
-acl90 -s fe2.lisp
-acl90 -s special-slots-1.lisp
-acl90 -s special-slots-2.lisp
-acl90 -s special-slots-3.lisp
-acl90 -s layer-gc.lisp
-acl90 -s dynenv.lisp
-acl90 -s partial-initargs.lisp
-ccl -l demo3.lisp
-ccl -l spx.lisp
-ccl -l grouped-layers.lisp
-ccl -l fe.lisp
-ccl -l fe2.lisp
-ccl -l special-slots-1.lisp
-ccl -l special-slots-2.lisp
-ccl -l special-slots-3.lisp
-ccl -l layer-gc.lisp
-ccl -l dynenv.lisp
-ccl -l partial-initargs.lisp
+abcl --load demo3.lisp --batch
+abcl --load spx.lisp --batch
+abcl --load grouped-layers.lisp --batch
+abcl --load fe.lisp --batch
+abcl --load fe2.lisp --batch
+abcl --load special-slots-1.lisp --batch
+abcl --load special-slots-2.lisp --batch
+abcl --load special-slots-3.lisp --batch
+abcl --load layer-gc.lisp --batch
+abcl --load dynenv.lisp --batch
+abcl --load partial-initargs.lisp --batch
+acl90 --debug-startup -L ~/.clinit.cl -L demo3.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L spx.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L grouped-layers.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L fe.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L fe2.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L special-slots-1.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L special-slots-2.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L special-slots-3.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L layer-gc.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L dynenv.lisp --kill
+acl90 --debug-startup -L ~/.clinit.cl -L partial-initargs.lisp --kill
+ccl -l demo3.lisp -e '(quit)'
+ccl -l spx.lisp -e '(quit)'
+ccl -l grouped-layers.lisp -e '(quit)'
+ccl -l fe.lisp -e '(quit)'
+ccl -l fe2.lisp -e '(quit)'
+ccl -l special-slots-1.lisp -e '(quit)'
+ccl -l special-slots-2.lisp -e '(quit)'
+ccl -l special-slots-3.lisp -e '(quit)'
+ccl -l layer-gc.lisp -e '(quit)'
+ccl -l dynenv.lisp -e '(quit)'
+ccl -l partial-initargs.lisp -e '(quit)'
 clisp -i ~/.clisprc.lisp -on-error debug demo3.lisp
 clisp -i ~/.clisprc.lisp -on-error debug spx.lisp
 clisp -i ~/.clisprc.lisp -on-error debug grouped-layers.lisp
@@ -42,36 +42,36 @@ clisp -i ~/.clisprc.lisp -on-error debug special-slots-3.lisp
 clisp -i ~/.clisprc.lisp -on-error debug layer-gc.lisp
 clisp -i ~/.clisprc.lisp -on-error debug dynenv.lisp
 clisp -i ~/.clisprc.lisp -on-error debug partial-initargs.lisp
-ecl -load demo3.lisp
-ecl -load spx.lisp
-ecl -load grouped-layers.lisp
-ecl -load fe.lisp
-ecl -load fe2.lisp
-ecl -load special-slots-1.lisp
-ecl -load special-slots-2.lisp
-ecl -load special-slots-3.lisp
-ecl -load layer-gc.lisp
-ecl -load dynenv.lisp
-ecl -load partial-initargs.lisp
-lisp -load demo3.lisp
-lisp -load spx.lisp
-lisp -load grouped-layers.lisp
-lisp -load fe.lisp
-lisp -load fe2.lisp
-lisp -load special-slots-1.lisp
-lisp -load special-slots-2.lisp
-lisp -load special-slots-3.lisp
-lisp -load layer-gc.lisp
-lisp -load dynenv.lisp
-lisp -load partial-initargs.lisp
-sbcl --load demo3.lisp
-sbcl --load spx.lisp
-sbcl --load grouped-layers.lisp
-sbcl --load fe.lisp
-sbcl --load fe2.lisp
-sbcl --load special-slots-1.lisp
-sbcl --load special-slots-2.lisp
-sbcl --load special-slots-3.lisp
-sbcl --load layer-gc.lisp
-sbcl --load dynenv.lisp
-sbcl --load partial-initargs.lisp
+ecl -shell demo3.lisp
+ecl -shell spx.lisp
+ecl -shell grouped-layers.lisp
+ecl -shell fe.lisp
+ecl -shell fe2.lisp
+ecl -shell special-slots-1.lisp
+ecl -shell special-slots-2.lisp
+ecl -shell special-slots-3.lisp
+ecl -shell layer-gc.lisp
+ecl -shell dynenv.lisp
+ecl -shell partial-initargs.lisp
+lisp -load demo3.lisp -eval '(quit)'
+lisp -load spx.lisp -eval '(quit)'
+lisp -load grouped-layers.lisp -eval '(quit)'
+lisp -load fe.lisp -eval '(quit)'
+lisp -load fe2.lisp -eval '(quit)'
+lisp -load special-slots-1.lisp -eval '(quit)'
+lisp -load special-slots-2.lisp -eval '(quit)'
+lisp -load special-slots-3.lisp -eval '(quit)'
+lisp -load layer-gc.lisp -eval '(quit)'
+lisp -load dynenv.lisp -eval '(quit)'
+lisp -load partial-initargs.lisp -eval '(quit)'
+sbcl --load demo3.lisp --quit
+sbcl --load spx.lisp --quit
+sbcl --load grouped-layers.lisp --quit
+sbcl --load fe.lisp --quit
+sbcl --load fe2.lisp --quit
+sbcl --load special-slots-1.lisp --quit
+sbcl --load special-slots-2.lisp --quit
+sbcl --load special-slots-3.lisp --quit
+sbcl --load layer-gc.lisp --quit
+sbcl --load dynenv.lisp --quit
+sbcl --load partial-initargs.lisp --quit
