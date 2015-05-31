@@ -27,6 +27,7 @@ initializing instances of such classes
 
 (asdf:defsystem #:contextl
   :name "ContextL"
+  :description "ContextL is a CLOS extension for Context-oriented Programming (COP)."
   :author "Pascal Costanza"
   :version "1.0.0"
   :licence "

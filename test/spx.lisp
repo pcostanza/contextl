@@ -89,7 +89,7 @@
   ((some-slot :initform (incf *counter*) :reader some-slot :reinitialize t))
   (:metaclass singleton-class))
 
-#-lispworks6.1
+#-(or lispworks6.1 lispworks7)
 (incf *check-counter*)
 
 (assert (eql (some-slot (class-prototype (find-class 'class1))) *check-counter*))
@@ -98,9 +98,9 @@
   ((some-slot :initform (incf *counter*) :reader some-slot :reinitialize t))
   (:metaclass singleton-class))
 
-#-lispworks6.1
+#-(or lispworks6.1 lispworks7)
 (incf *check-counter*)
-#+lispworks6.1
+#+(or lispworks6.1 lispworks7)
 (incf *check-counter* 3)
 
 (ensure-finalized (find-class 'class2))
@@ -111,7 +111,7 @@
   ((some-slot :initform (incf *counter*) :reader some-slot :reinitialize t))
   (:metaclass singleton-class))
 
-#-lispworks6.1
+#-(or lispworks6.1 lispworks7)
 (incf *check-counter*)
 
 (assert (eql (some-slot (class-prototype (find-class 'class2))) *check-counter*))
@@ -146,7 +146,7 @@
 (deflayer layer1 ()
   ((some-slot :initform (incf *counter*) :reader some-slot :reinitialize t)))
 
-#-lispworks6.1
+#-(or lispworks6.1 lispworks7)
 (incf *check-counter*)
 
 (assert (eql (some-slot (find-layer 'layer1)) *check-counter*))
@@ -154,9 +154,9 @@
 (deflayer layer2 ()
   ((some-slot :initform (incf *counter*) :reader some-slot :reinitialize t)))
 
-#-lispworks6.1
+#-(or lispworks6.1 lispworks7)
 (incf *check-counter*)
-#+lispworks6.1
+#+(or lispworks6.1 lispworks7)
 (incf *check-counter* 3)
 
 (assert (eql (some-slot (find-layer 'layer2)) *check-counter*))
@@ -164,7 +164,7 @@
 (deflayer layer2 ()
   ((some-slot :initform (incf *counter*) :reader some-slot :reinitialize t)))
 
-#-lispworks6.1
+#-(or lispworks6.1 lispworks7)
 (incf *check-counter*)
 
 (assert (eql (some-slot (find-layer 'layer2)) *check-counter*))
@@ -180,9 +180,9 @@
 (deflayer layer3 ()
   ((some-slot :initform (incf *counter*) :reader some-slot :special t)))
 
-#-lispworks6.1
+#-(or lispworks6.1 lispworks7)
 (incf *check-counter*)
-#+lispworks6.1
+#+(or lispworks6.1 lispworks7)
 (incf *check-counter* 3)
 
 (assert (eql (some-slot (find-layer 'layer3)) *check-counter*))
@@ -192,7 +192,7 @@
   (deflayer layer3 ()
     ((some-slot :initform (incf *counter*) :reader some-slot :special t :reinitialize t)))
   
-  #-lispworks6.1
+  #-(or lispworks6.1 lispworks7)
   (incf *check-counter*)
   
   ;(assert (eql (some-slot (find-layer 'layer3)) *check-counter*))
@@ -206,9 +206,9 @@
 (deflayer layer4 ()
   ((some-slot :initform (incf *counter*) :reader some-slot :special t)))
 
-#-lispworks6.1
+#-(or lispworks6.1 lispworks7)
 (incf *check-counter*)
-#+lispworks6.1
+#+(or lispworks6.1 lispworks7)
 (incf *check-counter* 2)
 
 (dletf (((some-slot (find-layer 'layer4)) 'bar))

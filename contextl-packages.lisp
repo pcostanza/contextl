@@ -3,7 +3,7 @@
 (defpackage #:contextl
   #+lispworks5
   (:import-from #:system #:with-hash-table-locked)
-  #+lispworks6
+  #+(or lispworks6 lispworks7)
   (:import-from #:hcl #:with-hash-table-locked)
   (:use #:closer-common-lisp #:lispworks)
   (:export

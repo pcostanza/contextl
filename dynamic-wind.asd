@@ -1,5 +1,6 @@
 (asdf:defsystem #:dynamic-wind
   :name "dynamic-wind"
+  :description "The dynamic-wind part of ContextL as a separate independent system definition."
   :author "Pascal Costanza"
   :version "1.0.0"
   :licence "
