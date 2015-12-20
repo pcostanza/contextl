@@ -1,0 +1,11 @@
+acl --debug-startup -L ~/.clinit.cl -L demo3.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L spx.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L grouped-layers.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L fe.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L fe2.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L special-slots-1.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L special-slots-2.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L special-slots-3.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L layer-gc.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L dynenv.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L partial-initargs.lisp --kill

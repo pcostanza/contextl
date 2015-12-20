@@ -9,17 +9,17 @@ abcl --load special-slots-3.lisp --batch
 abcl --load layer-gc.lisp --batch
 abcl --load dynenv.lisp --batch
 abcl --load partial-initargs.lisp --batch
-acl90 --debug-startup -L ~/.clinit.cl -L demo3.lisp --kill
-acl90 --debug-startup -L ~/.clinit.cl -L spx.lisp --kill
-acl90 --debug-startup -L ~/.clinit.cl -L grouped-layers.lisp --kill
-acl90 --debug-startup -L ~/.clinit.cl -L fe.lisp --kill
-acl90 --debug-startup -L ~/.clinit.cl -L fe2.lisp --kill
-acl90 --debug-startup -L ~/.clinit.cl -L special-slots-1.lisp --kill
-acl90 --debug-startup -L ~/.clinit.cl -L special-slots-2.lisp --kill
-acl90 --debug-startup -L ~/.clinit.cl -L special-slots-3.lisp --kill
-acl90 --debug-startup -L ~/.clinit.cl -L layer-gc.lisp --kill
-acl90 --debug-startup -L ~/.clinit.cl -L dynenv.lisp --kill
-acl90 --debug-startup -L ~/.clinit.cl -L partial-initargs.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L demo3.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L spx.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L grouped-layers.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L fe.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L fe2.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L special-slots-1.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L special-slots-2.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L special-slots-3.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L layer-gc.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L dynenv.lisp --kill
+acl --debug-startup -L ~/.clinit.cl -L partial-initargs.lisp --kill
 ccl -l demo3.lisp -e '(quit)'
 ccl -l spx.lisp -e '(quit)'
 ccl -l grouped-layers.lisp -e '(quit)'
