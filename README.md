@@ -3,7 +3,7 @@ ContextL is a CLOS extension for Context-oriented Programming (COP), and was the
 
 Currently, there is no documentation available, but you can find some test cases in the distribution and an overview of ContextL's features in [an overview paper](http://www.p-cos.net/documents/contextl-soa.pdf "Context-oriented Programming in ContextL"). See also this [general overview article about COP](http://www.jot.fm/issues/issue_2008_03/article4/ "Context-oriented Programming") which also contains some ContextL examples.
 
-ContextL depends on Closer to MOP.
+ContextL depends on [Closer to MOP](https://github.com/pcostanza/closer-mop "Closer to MOP").
 
 New in version 1.0.0:
 * New version number based on semantic versioning.
