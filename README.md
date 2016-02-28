@@ -5,7 +5,7 @@ ContextL is also provided by [Quicklisp](https://www.quicklisp.org/).
 
 Currently, there is no documentation available, but you can find some test cases in the distribution and an overview of ContextL's features in [an overview paper](http://www.p-cos.net/documents/contextl-soa.pdf "Context-oriented Programming in ContextL"). See also this [general overview article about COP](http://www.jot.fm/issues/issue_2008_03/article4/ "Context-oriented Programming") which also contains some ContextL examples.
 
-ContextL depends on [Closer to MOP](https://github.com/pcostanza/closer-mop "Closer to MOP").
+ContextL depends on [Closer to MOP](https://github.com/pcostanza/closer-mop "Closer to MOP"), and is therefore only supported by the Common Lisp implementations that are supported by that library.
 
 New in version 1.0.0:
 * New version number based on semantic versioning.
