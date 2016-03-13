@@ -42,17 +42,17 @@ clisp -i ~/.clisprc.lisp -on-error debug special-slots-3.lisp
 clisp -i ~/.clisprc.lisp -on-error debug layer-gc.lisp
 clisp -i ~/.clisprc.lisp -on-error debug dynenv.lisp
 clisp -i ~/.clisprc.lisp -on-error debug partial-initargs.lisp
-ecl -shell demo3.lisp
-ecl -shell spx.lisp
-ecl -shell grouped-layers.lisp
-ecl -shell fe.lisp
-ecl -shell fe2.lisp
-ecl -shell special-slots-1.lisp
-ecl -shell special-slots-2.lisp
-ecl -shell special-slots-3.lisp
-ecl -shell layer-gc.lisp
-ecl -shell dynenv.lisp
-ecl -shell partial-initargs.lisp
+ecl -debug -shell demo3.lisp
+ecl -debug -shell spx.lisp
+ecl -debug -shell grouped-layers.lisp
+ecl -debug -shell fe.lisp
+ecl -debug -shell fe2.lisp
+ecl -debug -shell special-slots-1.lisp
+ecl -debug -shell special-slots-2.lisp
+ecl -debug -shell special-slots-3.lisp
+ecl -debug -shell layer-gc.lisp
+ecl -debug -shell dynenv.lisp
+ecl -debug -shell partial-initargs.lisp
 lisp -load demo3.lisp -eval '(quit)'
 lisp -load spx.lisp -eval '(quit)'
 lisp -load grouped-layers.lisp -eval '(quit)'
