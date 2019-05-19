@@ -91,8 +91,10 @@
 (defgeneric map-symbol (mapper symbol &optional generate)
   (:method ((mapper symbol-mapper) (symbol symbol) &optional (generate #'gensym))
    (if (symbol-package symbol)
-     (intern (format nil "=~A-FOR-~A="
-                     (symbol-mapper-name mapper)
-                     (symbol-name symbol))
+     (intern (with-standard-io-syntax
+               (format nil "=~A-~A-~A="
+                       (symbol-mapper-name mapper)
+                       :for
+                       (symbol-name symbol)))
              (symbol-package symbol))
      (atomic-ensure-symbol-mapping symbol mapper generate))))
