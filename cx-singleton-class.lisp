@@ -28,7 +28,7 @@
 (defmethod initialize-instance :around
   ((slotd singleton-direct-slot-definition)
    &rest initargs &key name (allocation :class) reinitialize)
-  #+(or abcl cmu ecl lispworks6.1 lispworks7) (declare (ignore reinitialize))
+  #+(or abcl cmu ecl lispworks6.1 lispworks7 lispworks8) (declare (ignore reinitialize))
   (restart-case
       (unless (eq allocation :class)
         (error "The allocation of the singleton class slot ~S must be :CLASS, but is defined as ~S."
@@ -41,8 +41,8 @@
   (apply #'call-next-method slotd
          :allocation allocation
          :reinitialize
-         #-(or abcl cmu ecl lispworks6.1 lispworks7) (and reinitialize *reinitialize-singleton-class*)
-         #+(or abcl cmu ecl lispworks6.1 lispworks7) nil
+         #-(or abcl cmu ecl lispworks6.1 lispworks7 lispworks8) (and reinitialize *reinitialize-singleton-class*)
+         #+(or abcl cmu ecl lispworks6.1 lispworks7 lispworks8) nil
          initargs))
 
 (defmethod reinitialize-instance :before
