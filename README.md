@@ -7,8 +7,6 @@ Currently, there is no documentation available, but you can find some test cases
 
 ContextL depends on [Closer to MOP](https://github.com/pcostanza/closer-mop "Closer to MOP"), and is therefore only supported by the Common Lisp implementations that are supported by that library.
 
-**Warning:** ContextL currently doesn't work on Embeddable Common Lisp (as of ECL 16.1.2, and already since a couple of versions before). Currently investigating what the issue is. Please stay tuned.
-
 New in version 1.0.0:
 * New version number based on semantic versioning.
 * Since version 0.61, support for Allegro Common Lisp 8.2 & 9.0, ABCL, and LispWorks 6.1 has been added.
