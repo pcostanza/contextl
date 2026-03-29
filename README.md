@@ -1,3 +1,5 @@
+This repository has moved to https://codeberg.org/pcostanza/contextl
+
 # ContextL
 ContextL is a CLOS extension for Context-oriented Programming (COP), and was the first language extension that explicitly supports COP when it was originally introduced in 2005.
 
